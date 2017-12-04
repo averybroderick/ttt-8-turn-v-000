@@ -29,7 +29,7 @@ def turn(input)
   index = input_to_index(input)
   if valid_move(board, index)
     move(board, index, char)
-    display_board
+    display_board(board)
   else
     puts "Please try another input"
   end
