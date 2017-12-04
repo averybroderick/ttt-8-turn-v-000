@@ -30,5 +30,6 @@ def turn(board)
     display_board(board)
   else
     puts "Please try another input"
+    index = gets.strip
   end
 end
