@@ -24,5 +24,12 @@ def move(board, index, char)
   end
 end
 
-def turn
+def turn(input)
+  puts "Please enter 1-9"
+  index = input_to_index(input)
+  if valid_move(board, index)
+    move(board, index, char)
+  else
+    puts "Please try another input"
+  end
 end
