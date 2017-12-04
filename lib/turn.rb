@@ -11,7 +11,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(index)
-  index.between?(0,8) 
+  index.between?(0,8) && !(position_taken?(index)) 
 end
 
 def move
